@@ -10,6 +10,7 @@ import { apitestJsContent } from "./js/apitest.js";
 import { pushDanmuJsContent } from "./js/pushdanmu.js";
 import { requestRecordsJsContent } from "./js/requestrecords.js";
 import { systemSettingsJsContent } from "./js/systemsettings.js";
+import { speedInsightsJsContent } from "./js/speed-insights.js";
 
 // language=HTML
 export const HTML_TEMPLATE = /* html */ `
@@ -240,7 +241,7 @@ export const HTML_TEMPLATE = /* html */ `
                     </div>
                 </div>
 
-                <!-- 重新部署确认模态框 -->
+                <!-- 重新部署确认模���框 -->
                 <div class="modal" id="deploy-system-modal">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -366,6 +367,7 @@ export const HTML_TEMPLATE = /* html */ `
         ${pushDanmuJsContent}
         ${requestRecordsJsContent}
         ${systemSettingsJsContent}
+        ${speedInsightsJsContent}
     </script>
 </body>
 </html>
