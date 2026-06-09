@@ -1,3 +1,4 @@
+import { inject } from '@vercel/analytics';
 import { Globals } from './configs/globals.js';
 import { jsonResponse } from './utils/http-util.js';
 import { log, formatLogMessage } from './utils/log-util.js'
@@ -18,6 +19,9 @@ import {
     handleQRCheck,
     handleCookieSave
 } from "./utils/cookie-util.js";
+
+// Initialize Vercel Web Analytics
+inject();
 
 let globals;
 
