@@ -18,6 +18,10 @@ import {
     handleQRCheck,
     handleCookieSave
 } from "./utils/cookie-util.js";
+import { injectSpeedInsights } from '@vercel/speed-insights';
+
+// Initialize Vercel Speed Insights
+injectSpeedInsights();
 
 let globals;
 
